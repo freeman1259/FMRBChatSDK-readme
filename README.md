@@ -29,8 +29,9 @@ floatmenu.aar、lfilepickerlibrary.aar、fmimsdk.aar放入项目libs目录下,
   public class MyApplication extends Application {
       public void onCreate() {
           super.onCreate();
-          IMConfig.IM_SERVER_IP = "101.200.179.162";
-          IMConfig.IM_SERVER_PORT = 9912;
+	  IMConfig.HTTP_COMMON_CONTROLLER_URL = "http://101.200.179.162:7080/summerchat/";
+          IMConfig.IM_SERVER_IP = "101.200.179.162";	  
+          IMConfig.IM_SERVER_PORT = 9912;	  
           IMClientManager.init(this);
       }
   }
@@ -135,5 +136,9 @@ public class MainTabActivity
      * @param obsAfterLogoutIMServer 本观察者将在退出IM服务完成后，被调用，可根据主app业务需要传入或null
      */
     LoginRBChatHelper.doLogoutNoConfirm(final Context context, final boolean exitJVM
-            , final Observer obsAfterLogoutIMServer)
+            , final Observer obsAfterLogoutIMServer)	    
 ```
+
+### 替换消息列表页面中专属客服的默认图标
+在原app主项目的drawable-xxhdpi目录中放入你的图标文件，并命名为：main_alarms_chat_message_icon.png，运行时即会覆盖sdk中的该图标。
+该方法可在无需修改sdk的情况下完成替换。
