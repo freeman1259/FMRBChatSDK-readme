@@ -39,24 +39,24 @@ floatmenu.aar、lfilepickerlibrary.aar、fmimsdk.aar放入项目libs目录下,
 ### 登录IM服务
 在原app完成原登录业务后添加：
 ```java
-	// 该变量应为登录用户的账号，目前测试期间尚未同步数据，临时使用固定账号测试
-	String loginAccount = "400129";
-	// 此处token由原app服务端返回,目前测试期间临时设置任意字符串
-	String loginToken = "";
-	// 登陆/连接全部完成后要做的事
-	Observer afterLoginIMServerSucessObs = new Observer() {
-		@Override
-		public void update(Observable o, Object arg) {
-			//MainTabActivity替换为你的登录完成后要进入的页面
-			LoginRBChatHelper.afterLoginIMServerSucess(LoginActivity.this, MainTabActivity.class);
-		}
-	};
+  // 该变量应为登录用户的账号，目前测试期间尚未同步数据，临时使用固定账号测试
+  String loginAccount = "400129";
+  // 此处token由原app服务端返回,目前测试期间临时设置任意字符串
+  String loginToken = "";
+  // 登陆/连接全部完成后要做的事
+  Observer afterLoginIMServerSucessObs = new Observer() {
+	@Override
+	public void update(Observable o, Object arg) {
+		//MainTabActivity替换为你的登录完成后要进入的页面
+		LoginRBChatHelper.afterLoginIMServerSucess(LoginActivity.this, MainTabActivity.class);
+	}
+  };
 
-	// 提交用户登陆信息认证
-	new LoginRBChatHelper.LoginRBChatAsyc(this
-			, LoginRBChatHelper.constructLoginInfo(this, loginAccount, loginToken)
-			, null, afterLoginIMServerSucessObs
-	).execute();
+  // 提交用户登陆信息认证
+  new LoginRBChatHelper.LoginRBChatAsyc(this
+		, LoginRBChatHelper.constructLoginInfo(this, loginAccount, loginToken)
+		, null, afterLoginIMServerSucessObs
+  ).execute();
 ```
 ### 音视频观察者--添加到原app根页面中
 ```java
