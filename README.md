@@ -44,7 +44,7 @@
   String loginAccount = "test001";
   // 安全期间，此处token应由原app服务端计算返回, 计算所需密钥：
   // 建议将密钥存于服务端，由服务端生成token后返回给客户端，而不是存在客户端
-  // 计算方式为：对（loginAccount + ainchatsecret）进行sha256算法加密
+  // 计算方式为：对（loginAccount + 密钥）进行sha256算法加密
   // 例：用户名为test001,则对应的token应为下面的值，请验证你的计算结果是否与本例一致
   String loginToken = "";
 
