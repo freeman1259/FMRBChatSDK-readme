@@ -147,9 +147,9 @@ public class MainTabActivity
 + 在原app主项目的drawable-xxhdpi目录中放入你的图标文件，并命名为：main_alarms_chat_kefu_icon.png，运行时即会覆盖sdk中的该图标。
 + 该方法可在无需修改sdk的情况下完成替换。
 
-&nbsp;
+
 ---
-&nbsp;
+
 
 ### 附：添加会员接口
 - 接口地址：http://101.200.179.162:7080/summerchat/SysAdminProcessor
