@@ -163,7 +163,7 @@ public class MainTabActivity
 	"token":"******",
 	"users":"[{
 			\"account_name\":\"abc123\",                // *用户名(账号)
-			\"kf_id\":\"400142\",                       // *客服号
+			\"kf_id\":\"400100\",                       // *客服号
 			\"user_mail\":\"a@b.c\",                    //  邮箱
 			\"nickname\":\"九指神丐\",                   // *昵称
 			\"user_sex\":\"1\",                         //  性别 1男0女 默认1
