@@ -41,12 +41,12 @@
 + 在原app完成原登录业务后添加：
 ```java
   // 此处填入原app的登录账号，该账号须预先已添加到ainchat服务端数据库中，添加会员接口见后附
-  String loginAccount = "test001";
-  // 安全期间，此处token应由原app服务端计算返回, 计算所需密钥：
+  String loginAccount = "******";
+  // 安全期间，此处token应由原app服务端计算返回, 计算所需密钥：******
   // 建议将密钥存于服务端，由服务端生成token后返回给客户端，而不是存在客户端
   // 计算方式为：对（loginAccount + 密钥）进行sha256算法加密
   // 例：用户名为test001,则对应的token应为下面的值，请验证你的计算结果是否与本例一致
-  String loginToken = "";
+  String loginToken = "******";
 
   // 登陆/连接全部完成后要做的事
   Observer afterLoginIMServerSucessObs = new Observer() {
@@ -158,9 +158,9 @@ public class MainTabActivity
 	"job":"update",
 	"action":"add_users",
 	//接口授权账号，生产环境下请向Ainchat后台管理系统管理员索取
-	"admin_uid":"",
+	"admin_uid":"******",
 	//接口授权账号对应的token，生产环境下请向Ainchat后台管理系统管理员索取
-	"token":"",
+	"token":"******",
 	"users":"[{
 			\"account_name\":\"abc123\",                // *用户名(账号)
 			\"kf_id\":\"400142\",                       // *客服号
