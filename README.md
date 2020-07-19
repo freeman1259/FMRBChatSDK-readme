@@ -168,13 +168,13 @@ public class MainTabActivity
 			\"nickname\":\"九指神丐\",                   // *昵称
 			\"user_sex\":\"1\",                         //  性别 1男0女 默认1
 			\"register_time\":\"2020-07-16 17:20:06\",  //  注册日期 默认当前时间
-			\"getUserType\":\"1\",                      // *会员等级,须大于等于1
-			\"getInvitationCode\":\"xyz567\",           //  推荐码
-			\"getSuperAgent\":\"alibaba\",              //  上级代理
-			\"getRealName\":\"洪七公\",                  //  真实姓名
-			\"getCreditRating\":\"1\",                  //  信用等级，默认0
-			\"getBirthDate\":\"2000-01-01\",            //  生日
-			\"getCreateAccountArea\":\"成都\"           //  开户地区
+			\"user_type\":\"1\",                        // *会员等级,须大于等于1
+			\"invitation_code\":\"xyz567\",             //  推荐码
+			\"super_agent\":\"alibaba\",                //  上级代理
+			\"real_name\":\"洪七公\",                   //  真实姓名
+			\"credit_rating\":\"1\",                    //  信用等级，默认0
+			\"birth_date\":\"2000-01-01\",              //  生日
+			\"create_account_area\":\"成都\"            //  开户地区
 		}]"
 }
 ```
