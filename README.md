@@ -169,7 +169,7 @@ public class MainTabActivity
 			\"user_sex\":\"1\",                         //  性别 1男0女 默认1
 			\"register_time\":\"2020-07-16 17:20:06\",  //  注册日期 默认当前时间
 			\"getUserType\":\"1\",                      // *会员等级,须大于等于1
-			\"getInvitationCode\":\"400129\",           //  推荐码
+			\"getInvitationCode\":\"adc123\",           //  推荐码
 			\"getSuperAgent\":\"alibaba\",              //  上级代理
 			\"getRealName\":\"洪七公\",                  //  真实姓名
 			\"getCreditRating\":\"1\",                  //  信用等级，默认0
